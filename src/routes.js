@@ -8,9 +8,11 @@ import multer from 'multer';
 import uploadConfig from './config/upload';
 
 const routes = new Router();
-const upload = multer(uploadConfig)
+const upload = multer(uploadConfig);
 
-routes.post('/sessions', SessionControler.store);
+routes.post('/register', SessionControler.store);
+routes.post('/login', SessionControler.login);
+routes.get("/user/:id", )
 
 routes.post('/houses', upload.single('thumbnail'), HouseController.store);
 routes.get('/houses', HouseController.index);
@@ -23,4 +25,4 @@ routes.post('/houses/:house_id/reserve', ReserveController.store);
 routes.get('/reserves', ReserveController.index);
 routes.delete('/reserves/cancel/:reserve_id', ReserveController.delete)
 
-export default routes
+export default routes;
