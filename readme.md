@@ -4,8 +4,6 @@
 
 O **Sistema de Cadastro e Reserva de Locais** é uma aplicação web desenvolvida com Node.js e Express, projetada para permitir que usuários cadastrem e reservem locais para estadias, semelhante ao conceito de plataformas como o Airbnb. O sistema integra autenticação com JWT (JSON Web Token) para segurança e utiliza o MongoDB como banco de dados principal, garantindo escalabilidade e flexibilidade no armazenamento de dados dos usuários e das reservas.
 
-Este projeto foca principalmente na parte de **banco de dados**, utilizando MongoDB para armazenar informações críticas, como usuários, locais cadastrados, reservas e histórico de transações.
-
 ## Funcionalidades
 
 - **Cadastro de Locais**: Os usuários podem cadastrar locais para aluguel, incluindo informações como descrição, fotos e localização.
@@ -22,4 +20,4 @@ Este projeto foca principalmente na parte de **banco de dados**, utilizando Mong
 
 ## Banco de Dados (MongoDB)
 
-O **MongoDB** é fundamental para este projeto, pois fornece a flexibilidade necessária para armazenar e consultar dados de maneira eficiente. Com seu modelo de dados baseado em documentos, ele permite que diferentes tipos de informações, como usuários e locais, sejam armazenados de forma estruturada, mas sem a rigidez de um banco de dados relacional. Além disso, MongoDB garante que o sistema possa escalar facilmente, já que é adequado para lidar com grandes volumes de dados e alta carga de acessos.
+O **MongoDB** é fundamental para este projeto, pois fornece a flexibilidade necessária para armazenar e consultar dados de maneira eficiente.
