@@ -1,5 +1,4 @@
 import House from '../models/House';
-import User from '../models/User';
 
 class DashboardController{
 
