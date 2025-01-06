@@ -12,7 +12,6 @@ const upload = multer(uploadConfig);
 
 routes.post('/register', SessionControler.store);
 routes.post('/login', SessionControler.login);
-routes.get("/user/:id", )
 
 routes.post('/houses', upload.single('thumbnail'), HouseController.store);
 routes.get('/houses', HouseController.index);
